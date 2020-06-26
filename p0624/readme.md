@@ -43,6 +43,7 @@
 ---
 > ### 04. Image smoothing
 * 마스크를 이용한 필터링 연산 방법
+
 ![enter image description here](https://user-images.githubusercontent.com/34594339/85646186-85119500-b6d6-11ea-99ae-e6b1916e70bc.jpg)
 - `cv2.filter2D(InputArray src, OutputArray dst, int ddepth, InputArray kernel, Point anchor=Point(-1, -1), double delta=0, int borderType = BORDER_DEFAULT)`
 : src 영상에 kernel 필터를 이용하여 필터링을 수행하고 그 결과를 dst에 저장.
