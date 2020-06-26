@@ -1,0 +1,19 @@
+테이블
+create table car_member(
+id varchar2(20) primary key,
+pwd varchar2(20) not null,
+name varchar2(20) not null,
+tel varchar2(20) not null,
+car_num varchar2(20) not null
+);
+
+create table car_inout(
+num number primary key,
+car_num varchar2(20) not null,
+mem_type char(2) not null,
+action varchar2(10) not null,
+a_time date not null,
+img_path varchar2(50) not null
+);
+
+create sequence seq_car_inout;
