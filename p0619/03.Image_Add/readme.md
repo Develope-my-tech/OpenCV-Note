@@ -11,10 +11,10 @@
      
 > #### Image Blending  
   
-$$ g(x)=αf_0(x)+βf_1(x) $$  
+#### g(x)=&alpha;f_0(x)+&beta;f_1(x)   
 보통 &alpha;와 &beta;는 &alpha;+&beta;=1이 되도록 가중치를 설정하는 경우가 많다.  
 만약 &alpha;+&beta;=0.5로 설정하면 두 입력 영상의 윤곽을 골고루 가지는 평균 영상이 생성.  
-$α+β>1$이며녀 결과 영상이 두 입력 영상보다 밝아지게 되고, 덧셈 결과가 255보다 커지는 포화 현상이 발생할 수 있다. (반대로 <1이면 결과 영상이 어두워지게 된다.)  
+&alpha;+&beta;>1이면 결과 영상이 두 입력 영상보다 밝아지게 되고, 덧셈 결과가 255보다 커지는 포화 현상이 발생할 수 있다. (반대로 <1이면 결과 영상이 어두워지게 된다.)  
 - `void addWeighted(InputArray src1, double alpha, InputArray src2, double beta, double gamma, OutputArray dst, int dtype=-1)`  
 : 두 영상의 가중치의 합을 구하는 함수  
    - src1 : 첫번째 입력 행렬  
