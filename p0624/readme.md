@@ -70,12 +70,14 @@
 - `cv2.blur(InputArray src, OutputArray dst, Size ksize, Point anchor=Point(-1, -1), int borderType = BORDER_DEFAULT) ` 
 : 평균값 필터링
 
- $kernel = {1 \over ksize.width*ksize.height} \begin {bmatrix} 
+$$
+ kernel = {1 \over ksize.width*ksize.height} \begin {bmatrix} 
  1 & 1 & ... & 1\\
  1 & ...	& ...	& 1 \\
  ... \\
  1 & 1 & ... & 1
-  \end {bmatrix}$
+  \end {bmatrix}
+$$
   
 	- src : 입력 영상. 다채널 영상은 각 채널별로 블러링을 수행
 	- dst : 결과 영상. src와 같은 크기, 채널 수를 가진다.
