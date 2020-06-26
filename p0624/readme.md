@@ -135,6 +135,7 @@ Erosion과 반대로 대상을 확장한 후 작은 구멍을 채우는 방법. 
 edge는 한쪽 방향으로 픽셀 값이 급격하게 바뀌는 부분으로, edge 검출을 위해서 변화율이 큰 픽셀을 선택해야하는데 이때 데이터의 변화율을 `미분(derivative)`라고 한다.
 
 - Sobel&Scharr Filter : Gaussian Smoothing과 미분을 이용한 방법. noise가 있는 이미지에 적용하는 것이 좋다. X축과 Y축을 미분하는 방법으로 경계값을 계산
+
 `cv2.Sobel(src, ddepth, dx, dy[, dst[, ksize[, scale[, delta[, borderType]]]]]) → dst`
 	- src : input image
 	- ddepth : output image의 depth, -1이면 input image와 동일
@@ -142,7 +143,7 @@ edge는 한쪽 방향으로 픽셀 값이 급격하게 바뀌는 부분으로, e
 	- dy : y축 미분 차수
 	- ksize : kernel size (k*k)
 
-	`cv2.Scharr(src, ddepth, dx, dy[, dst[, scale[, delta[, borderType]]]]) → dst`
+`cv2.Scharr(src, ddepth, dx, dy[, dst[, scale[, delta[, borderType]]]]) → dst`
 : Sharr filter는 Sobel filter보다 좀 더 정확한 매분 계산을 수행.
 - Laplacian 함수 : 이미지의 가로 세로에 대한 Gradient를 2차 미분한 값. sobel filter에 미분의 정도가 더해진 것.
 `cv2.Laplacian(src, ddepth[, dst[, ksize[, scale[, delta[, borderType]]]]]) → dst`
