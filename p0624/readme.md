@@ -108,6 +108,7 @@ $$
 - Erosion : 각 pixel에 structuring element를 적용하여 하나라도 0이 있으면 대상 pixel을 제거하는 방법 입니다. 
 
 `cv2.erode(_src_,  _kernel_,  _dst_,  _anchor_,  _iterations_,  _borderType_,  _borderValue_)`
+	
 	- src : CV_8U, CV_16U, CV_16S, CV_32F or CV_64F
 	- kernel : `cv2.getStructuringElemet()` 함수로 만들 수 있음
 	- anchor : structuring element의 중심. defualt (-1, -1)로 중심점.
