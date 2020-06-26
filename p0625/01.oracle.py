@@ -8,7 +8,7 @@ class Test:
 
     def print(self):
         print("num:", self.num, '/ name:', self.name, '/price:', self.price, '/descript:',self.desc)
-        
+
 class Dao_test:
     def select_all(self):
         conn =cx_Oracle.connect("hr", "hr", "localhost:1521/xe", encoding='utf-8')
@@ -62,5 +62,3 @@ def main():
         t.print()
 
 main()
-
-

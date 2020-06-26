@@ -29,6 +29,10 @@ cv2.waitKey(0)
 logo_fg = cv2.bitwise_and(logo, logo, mask=mask)
 img_fg = cv2.bitwise_and(roi, roi, mask=mask_inv)
 
+cv2.imshow('logo_fg', logo_fg)
+cv2.imshow('img_fg', img_fg)
+cv2.waitKey(0)
+
 dst = cv2.add(logo_fg, img_fg)
 
 img[200:200+row, 0:cols] = dst
