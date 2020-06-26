@@ -103,9 +103,10 @@ $$
 	+ sigmaColor : Color를 고려할 공간. 숫자가 크면 멀리 있는 색도 고려함.
 	+ sigmaSpace : 숫자가 크면 멀리 있는 pixel도 고려함.
 ---
-> ### 06. # Morphological Transformations
+> ### 06. Morphological Transformations
 이미지를 segmentation하여 단순화, 제거, 보정을 통해서 형태를 파악하는 목적으로 사용. 일반적으로 binary나 grayscale image에 사용.
 - Erosion : 각 pixel에 structuring element를 적용하여 하나라도 0이 있으면 대상 pixel을 제거하는 방법 입니다. 
+
 `cv2.erode(_src_,  _kernel_,  _dst_,  _anchor_,  _iterations_,  _borderType_,  _borderValue_)`
 	- src : CV_8U, CV_16U, CV_16S, CV_32F or CV_64F
 	- kernel : `cv2.getStructuringElemet()` 함수로 만들 수 있음
@@ -116,6 +117,7 @@ $$
 - Dilation
 Erosion과 반대로 대상을 확장한 후 작은 구멍을 채우는 방법. erosion과 마찬가지로 각 pixel에 structuring element를 적용. 각 대상에 pixel에 대해서 or 연산을 수행.
 즉, 겹치는 부분이 하나라도 있으면 이미지를 확장.
+
 `cv2.dilation(src, kernel, dst, anchor, iterations, borderType, borderValue)`
 	- `cv2.erode()`와 동일
 경계가 부드러워지고, 구멍이 메꿔지는 효과
