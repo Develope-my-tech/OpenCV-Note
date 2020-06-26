@@ -3,7 +3,7 @@
 > * bitwise_or : 두 그림에서 모두 검은색(0)인 부분만 검정색(0)으로 나타냄
 > *  bitwise_not : 색이 반대로 나타남
 > *  bitwise_xor : 값이 서로 같으면 검은색, 그렇지 않으면 흰색
-	>	 * 검 xor 흰 = 흰 / 흰 xor 검 =  흰 / 검 xor 검 = 검 / 흰 xor 흰 = 흰
+>	 * 검 xor 흰 = 흰 / 흰 xor 검 =  흰 / 검 xor 검 = 검 / 흰 xor 흰 = 흰
 
 > ### concat
 > * vconcat : 두 이미지를 세로로 붙여 return
