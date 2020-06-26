@@ -12,6 +12,7 @@ mask와 bitwise_not(mask)한 이미지 결과
 		img_fg = cv2.bitwise_and(roi, roi, mask=mask_inv)
 		
 	![enter image description here](https://user-images.githubusercontent.com/34594339/85815371-37169300-b7a3-11ea-9779-c00a558dd2ca.PNG)
+
 logo_fg와 img_fg
 
 4. logo_fg와 img_fg를 더한 값(cv2.add)을 img에 붙여준다.
