@@ -71,14 +71,14 @@
 : 평균값 필터링
 
 
- kernel = {1 \over ksize.width*ksize.height} \begin {bmatrix} 
+ - kernel = {1 \over ksize.width*ksize.height} \begin {bmatrix} 
  1 & 1 & ... & 1\\
  1 & ...	& ...	& 1 \\
  ... \\
  1 & 1 & ... & 1
   \end {bmatrix}
   
-  x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+  - x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
 
   
 	- src : 입력 영상. 다채널 영상은 각 채널별로 블러링을 수행
