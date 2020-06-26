@@ -1,7 +1,8 @@
 > ### Add Logo
 1. roi : 로고를 삽입할 위치에 있는 이미지 배경을 뽑는다.
 2.  이미지를 흑백처리 및 임계치 설정(threshold를 통해 만든 mask)
-![enter image description here](https://user-images.githubusercontent.com/34594339/85815227-d7b88300-b7a2-11ea-9063-d8c1a199d2dc.PNG)
+
+![enter image description here](https://user-images.githubusercontent.com/34594339/85815227-d7b88300-b7a2-11ea-9063-d8c1a199d2dc.PNG) 
 
 mask와 bitwise_not(mask)한 이미지 결과
 3. 로고에서 이미지에 가져다 붙일 부분 (logo_fg), 이미지에서 로고에 붙일 부분을 제외한 배경 (img_fg)
