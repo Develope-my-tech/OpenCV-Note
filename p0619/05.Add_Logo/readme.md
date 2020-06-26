@@ -5,6 +5,7 @@
 ![enter image description here](https://user-images.githubusercontent.com/34594339/85815227-d7b88300-b7a2-11ea-9063-d8c1a199d2dc.PNG) 
 
 mask와 bitwise_not(mask)한 이미지 결과
+
 3. 로고에서 이미지에 가져다 붙일 부분 (logo_fg), 이미지에서 로고에 붙일 부분을 제외한 배경 (img_fg)
 
 	    logo_fg = cv2.bitwise_and(logo, logo, mask=mask)  
