@@ -72,6 +72,7 @@
 : 평균값 필터링
 
 ![enter image description here](https://latex.codecogs.com/gif.latex?kernel%20=%20%7B1%20%5Cover%20ksize.width*ksize.height%7D%20%5Cbegin%20%7Bbmatrix%7D%201%20&%20...%20&%201%5C%5C%20...%20&%20...%20&%20...%20%5C%5C%201%20&%20...%20&%201%20%5Cend%20%7Bbmatrix%7D)
+
 	- src : 입력 영상. 다채널 영상은 각 채널별로 블러링을 수행
 	- dst : 결과 영상. src와 같은 크기, 채널 수를 가진다.
 	- ksize : blurring kernel size
