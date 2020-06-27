@@ -15,6 +15,7 @@
    * epsilon : original curve와 근사치 최대 거리. 최대 거리가 클수록 더 먼곳의  point까지 고려하기 때문에 point 수가 줄어듬  
  (epsilon이 클 수록 더 단순한 형태의 컨투어를 그린다.) 
    * closed : 폐곡선 여부 
+   
    ![enter image description here](https://opencv-python.readthedocs.io/en/latest/_images/result018.jpg)
 
 > #### Convex Hull  
