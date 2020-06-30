@@ -1,4 +1,4 @@
-import proj1.p0620.main as m
-import proj1.p0620.service as s
+import Opencv_Note.proj1.sub.main as m
+import Opencv_Note.proj1.sub.service as s
 
 m.main(service=s.service_main)

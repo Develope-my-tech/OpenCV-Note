@@ -23,11 +23,11 @@ class AppWindow(tk.Frame):#frame
         self.src = ImageTk.PhotoImage(image=img)
 
     def create_widgets(self, path):
-        #self.make_img(path)
+        self.make_img(path)
         self.frame = tk.Label(self.master, image=self.src)
-        self.frame.pack(side='right')
-        self.sub_fr = tk.Frame(self.master)#frame
-        self.sub_fr.pack(side='left')
+        self.frame.pack()
+        self.sub_fr = tk.Frame(self.master) # frame
+        self.sub_fr.pack()
 
     def change_img(self, res):
         img = cv2.resize(res, (400, 300))
